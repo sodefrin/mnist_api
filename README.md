@@ -5,19 +5,27 @@ mnistのchainerでの学習＆モデルの保存＆画像を判定するAPIの�
 ### インストール
 
 ```
-$ pip install -r requirements.txt
+$ pipenv install
 ```
 
 ### モデルの学習
 
+#### MLP
+
 ```
-$ python train_mnist.py
+$ pipenv run mlp
+```
+
+#### CNN
+
+```
+$ pipenv run cnn
 ```
 
 ### API立ち上げ
 
 ```
-$ python app.py
+$ python run api
 ```
 
 ### curlでのテスト

@@ -6,9 +6,9 @@ import chainer.links as L
 import numpy as np
 import cv2
 
-import train_mnist
+import models.model as m
 
-model = L.Classifier(train_mnist.MLP(784, 1000, 10))
+model = L.Classifier(m.MLP(784, 1000, 10))
 chainer.serializers.load_npz('mnist_model.npz', model)
 
 @app.route('/', methods=['POST'])
