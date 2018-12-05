@@ -25,7 +25,7 @@ $ pipenv run cnn
 ### API立ち上げ
 
 ```
-$ python run api
+$ pipenv run api
 ```
 
 ### curlでのテスト
